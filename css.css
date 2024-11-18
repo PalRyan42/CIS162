@@ -1,42 +1,113 @@
 html { 
-    background-color: hsla(66, 88%, 30%, 0.836); 
+    background-image: url(Square\ One\ Studio\ New.jpg);
  } 
+ 
+ body {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  margin: auto;
+  width: 80%;
+  padding: 30px;
+}
  
 section { 
-    color: rgb(91, 91, 91);
-    background-color: ivory;
-    font-family: Verdana, Geneva, sans-serif;
- }
+  flex: 1;
+  color: rgb(91, 91, 91);
+  background-color: ivory;
+  font-family: sans-serif;
+  margin: auto;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+}
  
-h1 { 
-    font-size: 2.2em; 
- } 
- 
+
+h1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 4em; 
+  font-family: serif;
+  font-style: italic;
+  text-align: center;
+  border: none;
+}
 h2 { 
     font-size: 1.5em;
  }
  
-nav > ul > li > a:link, nav > ul > li > a:visited {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-  }
-  
-nav > ul > li > a:hover, nav > ul > li > a:active {
-    color: rgb(47, 11, 247);
-    text-decoration: underline;
-  }
- 
+
  footer { 
-    background-color: rgb(99, 87, 79); 
+    background-color: rgba(90, 63, 44, .75); 
     color: white; 
     color: rgba(255, 255, 255, 0.7); 
     font: normal small-caps bold 0.9em/3em  
           Quicksand, Verdana, Geneva, sans-serif; 
     text-align: center; 
+    margin-top: 10px;
+    clear: both;
  }
  
+ .menu {
+  background-color: rgba(0, 0, 0, 1);
+  height: 40px;
+  padding: 0;
+  width: 50%;
+  margin: none;
+ }
  
-li style {
-    height: 100px;
-    width: 10px;
+ nav {
+  text-align: left;
+  font-size: 2em;
+  
+ }
+
+ nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+}
+
+
+
+nav ul li {
+  display: inline;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
   }
+  
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    color: rgb(20, 24, 231);
+    text-decoration: underline;
+  }
+
+  .column-left {
+    float: left;
+    width: 50%;
+  }
+
+  .column-right {
+    float: right;
+    width: 50%;
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+}
+
+.column-left img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
